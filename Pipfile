@@ -13,6 +13,9 @@ numpy = "*"
 pillow = "*"
 ipykernel = "*"
 matplotlib = "*"
+sklearn = "*"
+scipy = "*"
+opencv-python = "*"
 
 
 [dev-packages]
