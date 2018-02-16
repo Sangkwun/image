@@ -1,4 +1,7 @@
 import os
+import xlsxwriter
+import numpy as np
+
 
 def search(dirname):
     image_list = {}
@@ -10,10 +13,12 @@ def search(dirname):
             images = os.listdir(full_filename)
             for image in images:
                 image_list[filename] = os.path.join(full_filename, image)
-                print(filename, os.path.join(full_filename, image))
+                # print(filename, os.path.join(full_filename, image))
             
 
     return image_list
         
 
-search("../../Caffe_data/")
+image_list = np.array(list(search("../../Caffe_data/").items(), dtype=dict(names = ['', '']])))
+
+print(image_list)
